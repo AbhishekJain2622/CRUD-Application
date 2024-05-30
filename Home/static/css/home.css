@@ -1,0 +1,28 @@
+body
+{
+    background-color: rgb(29, 73, 53);
+}
+
+#DivOne
+{
+    background-color: rgb(104, 83, 42);
+    max-width: fit-content;
+    padding: 1%;
+    margin-left: 40%;
+    margin-top: 15%;
+}
+
+#btn
+{
+    margin-left: 35%;
+}
+
+#DivTwo
+{
+    margin-left: 90%;
+}
+
+#id
+{
+    margin-left: 13.9%;
+}
