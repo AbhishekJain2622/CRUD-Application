@@ -15,4 +15,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'CRUD2.settings')
 
 application = get_wsgi_application()
 
+<<<<<<< HEAD
 app=application
+=======
+>>>>>>> e073cfa0fc5fefe931331cb66ce907ba44895892
