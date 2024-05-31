@@ -12,7 +12,7 @@ def show(request):
 
 def send(request):
     if request.method == 'POST':
-        ID = request.POST['id']
+        ID = request.POST['id' ]
         data1 = request.POST['data1']
         data2 = request.POST['data2']
         Entry(ID = ID,data1=data1,data2=data2).save()
