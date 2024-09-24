@@ -12,15 +12,18 @@ def show(request):
 
 def send(request):
     if request.method == 'POST':
-        ID = request.POST['id' ]
+        ID = request.POST['id']
         data1 = request.POST['data1']
         data2 = request.POST['data2']
-        Entry(ID = ID,data1=data1,data2=data2).save()
-        msg="Data Stored Successfully"
-        return render(request,"Home/home.html",{'msg':msg})
+        data3 = request.POST.get('data3', '')  # Provide a default value or handle if missing
+
+        # Create and save the Entry object
+        Entry(ID=ID, data1=data1, data2=data2, data3=data3).save()
+        
+        msg = "Data Stored Successfully"
+        return render(request, "Home/home.html", {'msg': msg})
     else:
         return HttpResponse("<h1>404 - Not Found</h1>")
-
 def delete(request):
     ID = request.GET['id']
     Entry.objects.filter(ID=ID).delete()
