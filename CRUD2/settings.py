@@ -79,14 +79,13 @@ WSGI_APPLICATION = 'CRUD2.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 
-"""DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-"""
-DATABASES = {
+"""DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'test1',
@@ -94,7 +93,7 @@ DATABASES = {
         'PASSWORD': '1234',
        
     }
-}
+}"""
 
 
 # Password validation
